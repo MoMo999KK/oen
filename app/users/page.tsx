@@ -1,4 +1,10 @@
 import EmptyState from '../components/EmptyState';
+import { Metadata } from "next";
+export const metadata:Metadata={
+  title:"messganegr chatt with your users",
+  description:"chatt only with users not with users",
+ 
+}
 
 const People = () => {
   return (

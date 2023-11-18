@@ -21,6 +21,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({
 }) => {
   const session = useSession();
   const [imageModalOpen, setImageModalOpen] = useState(false);
+  // !own are messages that arent writen by us !!!
 
 
   const isOwn = session.data?.user?.email === data?.sender?.email

@@ -1,5 +1,11 @@
 import Image from "next/image";
 import AuthForm from "./components/AuthForm";
+import { Metadata } from "next";
+export const metadata:Metadata={
+  title:"Home messganegr chatt with your firneds",
+  description:"chatt only with fiends not with others",
+  
+}
 
 const Auth = () => {
   return (

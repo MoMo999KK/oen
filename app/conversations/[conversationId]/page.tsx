@@ -5,12 +5,24 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 import Form from "./components/Form";
 import EmptyState from "@/app/components/EmptyState";
+import { Metadata } from "next";
+import { title } from "process";
+ 
+//export async function generateMetada({params}:{params:IParams}){
+  //const conversation = await getConversationById(params.conversationId);
+  //if(!conversation)return {
+   // title:"not found",
+  // describtion:"failed to load the page or the page doesnot exist!"
+ // }
 
-interface IParams {
-  conversationId: string;
-}
 
-const ChatId = async ({ params }: { params: IParams }) => {
+  //return{
+    //title:conversation.name,
+   // describtion:"a coversation between two users"
+  //}
+//}
+
+const ChatId = async ({ params }:{params:{conversationId:string}}) => {
   const conversation = await getConversationById(params.conversationId);
   const messages = await getMessages(params.conversationId);
 

@@ -103,6 +103,7 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
                   font-light
                 "
               >
+                somone has started a conversation with u!
                  
               </p>
             )}
